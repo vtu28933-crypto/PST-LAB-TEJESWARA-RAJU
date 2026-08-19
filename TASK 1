@@ -1,0 +1,24 @@
+Program 1: Function without parameters and without return value
+This method simply prints a message.
+public class Demo {
+
+    // Function declaration
+    void displayMessage() {
+        System.out.println("Welcome to Java Functions");
+    }
+
+    public static void main(String[] args) {
+
+        // Creating object
+        Demo obj = new Demo();
+
+        // Calling the function
+        obj.displayMessage();
+    }
+}
+Output
+Welcome to Java Functions
+Explanation
+•	displayMessage() is a method with no parameters.
+•	Its return type is void, meaning it does not return any value.
+•	The method is called using obj.displayMessage().
