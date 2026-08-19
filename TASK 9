@@ -1,0 +1,51 @@
+Program 9: Function to check prime number
+A prime number has exactly two factors: 1 and itself.
+public class PrimeNumber {
+
+    boolean isPrime(int number) {
+
+        if (number <= 1) {
+            return false;
+        }
+
+        for (int i = 2; i < number; i++) {
+
+            if (number % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        PrimeNumber obj = new PrimeNumber();
+
+        boolean result = obj.isPrime(13);
+
+        if (result) {
+            System.out.println("Prime Number");
+        } else {
+            System.out.println("Not Prime Number");
+        }
+    }
+}
+Output
+Prime Number
+Explanation
+•	The method checks divisibility from 2 to number - 1.
+•	If divisible by any number, it returns false.
+•	Otherwise, it returns true.
+Types of functions in Java
+Type	Description
+No parameters, no return	Performs a task without input/output value.
+Parameters, no return	Takes input but does not return a value.
+No parameters, return	Returns a value without taking input.
+Parameters, return	Takes input and returns a value.
+Key points to remember
+•	A function is declared with a return type, method name, and parameters.
+•	void means the method does not return any value.
+•	return sends a value back to the calling method.
+•	Functions improve code reusability and program organization.
+These are the most common basic function programs in Java and are frequently asked in lab exams, viva, and university examinations.
