@@ -1,0 +1,30 @@
+Program 7: Function to calculate factorial
+Factorial of a number n is the product of all positive integers from 1 to n.
+For example, 5! = 5 × 4 × 3 × 2 × 1 = 120.
+public class Factorial {
+
+    int findFactorial(int n) {
+
+        int fact = 1;
+
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+
+        return fact;
+    }
+
+    public static void main(String[] args) {
+
+        Factorial obj = new Factorial();
+
+        int result = obj.findFactorial(5);
+
+        System.out.println("Factorial = " + result);
+    }
+}
+Output
+Factorial = 120
+Explanation
+•	A loop runs from 1 to n.
+•	The variable fact stores the product.
