@@ -1,0 +1,25 @@
+Program 5: Function to check even or odd
+public class EvenOdd {
+
+    void checkEvenOdd(int number) {
+
+        if (number % 2 == 0) {
+            System.out.println(number + " is Even");
+        } else {
+            System.out.println(number + " is Odd");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        EvenOdd obj = new EvenOdd();
+
+        obj.checkEvenOdd(7);
+    }
+}
+Output
+7 is Odd
+Explanation
+•	The modulo operator % gives the remainder.
+•	If the remainder is 0, the number is even.
+•	Otherwise, the number is odd.
