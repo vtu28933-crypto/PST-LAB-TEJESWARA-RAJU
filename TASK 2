@@ -1,0 +1,24 @@
+Program 2: Function with parameters and no return value
+This method takes two numbers and prints their sum.
+public class Addition {
+
+    // Function with parameters
+    void add(int a, int b) {
+        int sum = a + b;
+        System.out.println("Sum = " + sum);
+    }
+
+    public static void main(String[] args) {
+
+        Addition obj = new Addition();
+
+        // Passing arguments
+        obj.add(10, 20);
+    }
+}
+Output
+Sum = 30
+Explanation
+•	The method add(int a, int b) receives two parameters.
+•	The values 10 and 20 are passed as arguments.
+•	The method calculates the sum and prints it.
